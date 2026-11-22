@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.library'
+    id 'expo-module-gradle-plugin'
+}
+
+group = 'com.aruteko.sirenplayer.audio'
+version = '1.0.0'
+
+android {
+    namespace "com.aruteko.sirenplayer.audio"
+    defaultConfig {
+        versionCode 1
+        versionName '1.0.0'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation "androidx.media3:media3-exoplayer:1.9.0"
+    implementation "androidx.media3:media3-session:1.9.0"
+    implementation "androidx.media3:media3-datasource-okhttp:1.9.0"
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
+}

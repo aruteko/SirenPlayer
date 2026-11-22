@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+
+# BBPlayer の複製．セッションの移動で入りうるが，本リポジトリには含めない
+/BBPlayer/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# generated native folders
+/android
+/ios
+.kotlin/
+/modules/*/android/build/
+/modules/*/android/.gradle/
+/modules/*/android/.cxx/
+
+# build outputs
+out/
+*.apk
+*.aab
+
+# signing keys and local secrets
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+gradle.properties
+google-services.json
+GoogleService-Info.plist
+credentials.json
+.env*
+
+# misc
+.DS_Store
+*.tsbuildinfo
+*.log
+.metro-health-check*

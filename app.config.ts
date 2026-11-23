@@ -53,12 +53,9 @@ const config: ExpoConfig = {
 			'expo-splash-screen',
 			{
 				image: './assets/images/splash-icon.png',
-				imageWidth: 200,
-				backgroundColor: '#ffffff',
-				dark: {
-					image: './assets/images/splash-icon-dark.png',
-					backgroundColor: '#0f1218',
-				},
+				imageWidth: 240,
+				// アイコンの背景と同じ色にして，明るい表示でも暗い表示でも，四角の継ぎ目を出さない
+				backgroundColor: '#14171f',
 			},
 		],
 		'expo-router',
